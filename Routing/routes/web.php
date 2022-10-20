@@ -18,18 +18,18 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-
+// Routing 
 
 route::get('/index', function(){   
       return "Omar kandil"; } );  
 
-//** Routing Parametre **
+//Routing with 1 Parametre
 
 
   Route::get('/index/{id}',function($age){ 
     return "Mon age est :  $age ans"; }); 
 
-   //** Routing Parametre ** 
+   // Routing with 2 Parametre 
 
     Route::get('/index/{id}/{name}',function($id,$name){ 
         return "ID : $id <br> Name : $name"; });
