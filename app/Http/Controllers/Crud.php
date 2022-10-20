@@ -14,7 +14,7 @@ class Crud extends Controller
 
         // $data = Mymodel::where('id', 1)->get();
 
-        $data = Mymodel::select('id', 'nom')->where('id',2)->get();
+        $data = Mymodel::select('id', 'nom')->where('id',3)->get();
         return view('select', compact("data"));
 
       }
