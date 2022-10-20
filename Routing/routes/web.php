@@ -20,28 +20,28 @@ Route::get('/', function () {
 
 // Routing 
 
-route::get('/index', function(){   
-      return "Omar kandil"; } );  
+// route::get('/index', function(){   
+//       return "Omar kandil"; } );  
 
 //Routing with 1 Parametre
 
 
-  Route::get('/index/{id}',function($age){ 
-    return "Mon age est :  $age ans"; }); 
+//   Route::get('/index/{id}',function($age){ 
+//     return "Mon age est :  $age ans"; }); 
 
    // Routing with 2 Parametre 
 
-    Route::get('/index/{id}/{name}',function($id,$name){ 
-        return "ID : $id <br> Name : $name"; });
+    // Route::get('/index/{id}/{name}',function($id,$name){ 
+    //     return "ID : $id <br> Name : $name"; });
 
 
-// Route::get('/select', [Crud::class,'select']);
+Route::get('/select', [Crud::class,'select']);
 
 
-// Route::get('/add',[Crud::class,'add']);
+Route::get('/add',[Crud::class,'add']);
 
 
-// Route::get('/insert',[Crud::class,'insert']);
+Route::get('/insert',[Crud::class,'insert']);
 
 
 
