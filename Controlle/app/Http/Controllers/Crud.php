@@ -10,24 +10,24 @@ class Crud extends Controller
     //
 
    
-      public function select(){
+      // public function select(){
 
         // $data = Mymodel::where('id', 1)->get();
 
-        $data = Mymodel::select('id', 'nom')->get();
-        return view('select', compact("data"));
+//         $data = Mymodel::select('id', 'nom')->get();
+//         return view('select', compact("data"));
 
-      }
+//       }
 
-      public function add(){
-        return view('add');
-      }
+//       public function add(){
+//         return view('add');
+//       }
 
-      public function insert(Request $request){
-        $mymodel = new Mymodel();
-        $mymodel->nom = $request->nom;
-        $mymodel->save();
-        return redirect('/select');
-      }
+//       public function insert(Request $request){
+//         $mymodel = new Mymodel();
+//         $mymodel->nom = $request->nom;
+//         $mymodel->save();
+//         return redirect('/select');
+//       }
 
 }

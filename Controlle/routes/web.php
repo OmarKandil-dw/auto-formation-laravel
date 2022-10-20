@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Crud;
+use App\Http\Controllers\PromotionController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -35,13 +36,16 @@ Route::get('/', function () {
     //     return "ID : $id <br> Name : $name"; });
 
 
-Route::get('/select', [Crud::class,'select']);
+// Route::get('/select', [Crud::class,'select']);
 
 
-Route::get('/add',[Crud::class,'add']);
+// Route::get('/add',[Crud::class,'add']);
 
 
-Route::get('/insert',[Crud::class,'insert']);
+// Route::get('/insert',[Crud::class,'insert']);
+
+Route::resource('promotion', PromotionController::class);
+
 
 
 
