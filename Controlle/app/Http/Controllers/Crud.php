@@ -14,7 +14,7 @@ class Crud extends Controller
 
         // $data = Mymodel::where('id', 1)->get();
 
-        $data = Mymodel::select('id', 'nom')->where('id',3)->get();
+        $data = Mymodel::select('id', 'nom')->get();
         return view('select', compact("data"));
 
       }
@@ -27,6 +27,7 @@ class Crud extends Controller
         $mymodel = new Mymodel();
         $mymodel->nom = $request->nom;
         $mymodel->save();
+        return redirect('/select');
       }
 
 }
