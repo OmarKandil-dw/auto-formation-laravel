@@ -35,7 +35,7 @@ Route::get('/', function () {
     //     return "ID : $id <br> Name : $name"; });
 
 
-Route::get('/select', [Crud::class,'select']);
+// Route::get('/select', [Crud::class,'select']);
 
 
 Route::get('/add',[Crud::class,'add']);

@@ -1,4 +1,4 @@
 <form action="/insert" method="get">
-    <input type="text" name="nom">
+    <input type="text" name="name">
     <button>Click</button>
 </form>
