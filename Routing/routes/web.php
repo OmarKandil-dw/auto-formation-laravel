@@ -20,13 +20,28 @@ Route::get('/', function () {
 
 
 
-Route::get('/select', [Crud::class,'select']);
+route::get('/index', function(){   
+      return "Omar kandil"; } );  
+
+//** Routing Parametre **
 
 
-Route::get('/add',[Crud::class,'add']);
+  Route::get('/index/{id}',function($age){ 
+    return "Mon age est :  $age ans"; }); 
+
+   //** Routing Parametre ** 
+
+    Route::get('/index/{id}/{name}',function($id,$name){ 
+        return "ID : $id <br> Name : $name"; });
 
 
-Route::get('/insert',[Crud::class,'insert']);
+// Route::get('/select', [Crud::class,'select']);
+
+
+// Route::get('/add',[Crud::class,'add']);
+
+
+// Route::get('/insert',[Crud::class,'insert']);
 
 
 
